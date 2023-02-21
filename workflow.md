@@ -2,7 +2,7 @@
 
 0. *Map the user actions*
     As a user, I can...
-    [ ] read an index of the restaurants
+    [X] read an index of the restaurants
     [ ] read the details a restaurant
     [ ] create a new restaurant
     [ ] update an existing restaurant
