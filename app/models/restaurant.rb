@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-    # def initialize(properties)
+    # def initialize(properties = {})
     #     @name   = properties[:name]
     #     @rating = properties[:rating]
     # end

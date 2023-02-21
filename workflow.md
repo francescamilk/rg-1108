@@ -3,10 +3,10 @@
 0. *Map the user actions*
     As a user, I can...
     [X] read an index of the restaurants
-    [ ] read the details a restaurant
-    [ ] create a new restaurant
-    [ ] update an existing restaurant
-    [ ] delete an existing restaurant
+    [X] read the details a restaurant
+    [X] create a new restaurant
+    [X] update an existing restaurant
+    [X] delete an existing restaurant
 
 -- executive phase --
 
