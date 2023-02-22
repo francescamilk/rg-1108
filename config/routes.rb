@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       get :chef
     end
 
-    resources :reviews, only: [ :new, :create ]
+    resources :reviews, only: :create
   end
 
   # # Create

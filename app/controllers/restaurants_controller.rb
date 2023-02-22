@@ -10,7 +10,10 @@ class RestaurantsController < ApplicationController
         @restaurants = Restaurant.where(rating: 5)
     end
 
-    def show; end
+    def show
+        @reviews = @restaurant.reviews
+        @review  = Review.new
+    end
 
     def chef
         @chef = @restaurant.chef_name
