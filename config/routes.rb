@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       # get 'restaurants/:id/chef', to: 'restaurants#chef'
       get :chef
     end
+
+    resources :reviews, only: [ :new, :create ]
   end
 
   # # Create
