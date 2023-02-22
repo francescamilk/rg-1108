@@ -11,8 +11,8 @@ class RestaurantsController < ApplicationController
     end
 
     def show
-        @reviews = @restaurant.reviews
         @review  = Review.new
+        @reviews = @restaurant.reviews
     end
 
     def chef

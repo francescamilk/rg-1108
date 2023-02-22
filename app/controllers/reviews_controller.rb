@@ -7,8 +7,15 @@ class ReviewsController < ApplicationController
         if @review.save 
             redirect_to restaurant_path(@restaurant)
         else
-            render :new, status: :unprocessable_entity
+            render :show, status: :unprocessable_entity
         end
+    end
+
+    def destroy
+        @review = Review.find(params[:id])
+        @review.destroy
+        redirect_to restaurant_path(@review.restaurant)
+        #status: :see_other
     end
 
     private

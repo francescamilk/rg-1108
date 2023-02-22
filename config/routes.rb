@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :reviews, only: :create
   end
 
+  resources :reviews, only: :destroy
+
   # # Create
   # get 'restaurants/new', to: 'restaurants#new', as: 'new_restaurant'
   # post 'restaurants',    to: 'restaurants#create'
