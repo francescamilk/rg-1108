@@ -5,6 +5,10 @@ class RestaurantsController < ApplicationController
         @restaurants = Restaurant.all
     end
 
+    def top
+        @restaurants = Restaurant.all.select { |restaurant| restaurant.rating == 5 }
+    end
+
     def show; end
 
     def new

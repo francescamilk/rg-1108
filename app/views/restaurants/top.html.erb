@@ -1,0 +1,8 @@
+<h1>Only the best!</h1>
+<ul>
+    <% @restaurants.each do |restaurant| %>
+        <li><%= restaurant.name %></li>
+    <% end %>
+</ul>
+
+<%= link_to "To home", restaurants_path %>
