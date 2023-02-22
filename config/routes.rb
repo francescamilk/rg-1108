@@ -6,6 +6,11 @@ Rails.application.routes.draw do
       # get 'restaurants/top', to: 'restaurants#top'
       get :top
     end
+
+    member do
+      # get 'restaurants/:id/chef', to: 'restaurants#chef'
+      get :chef
+    end
   end
 
   # # Create
